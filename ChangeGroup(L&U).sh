@@ -3,10 +3,12 @@
 #The below script does the following functions:
 #1.Change the Group Owner of the file.
 #2.Gets file name with path and group name from user.
-#3.Checks whether group name and path exists.
-#4.If True gets Group name and change the group owner of the file.
-#5.Else notifies user,file doesnt exist.
-#6.Execution : ChangeGroup(L&U).sh "groupname" "path of file"
+#3.Checks whether group name exists.
+#4.Check whether the path is a file or directory.
+#5.If path is directory, set recursive or non-recursive permission to the group owner to the directory according to input.
+#6.If path is file, change the group owner of the file. 
+#7.Else notifies user,file doesnt exist.
+#8.Execution : ChangeGroup(L&U).sh "groupname" "path of file/directory"
 #******************************************************************************************************************
 if test "$1" = ""
 then
