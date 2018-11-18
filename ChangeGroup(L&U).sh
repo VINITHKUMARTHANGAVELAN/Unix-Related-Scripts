@@ -2,11 +2,11 @@
 #******************************************************************************************************************
 #The below script does the following functions:
 #1.Change the Group Owner of the file.
-#2.Gets file name with path from user.
-#3.Checks for its existence.
-#4.If True gets Group name and change the group owner.
+#2.Gets file name with path and group name from user.
+#3.Checks whether group name and path exists.
+#4.If True gets Group name and change the group owner of the file.
 #5.Else notifies user,file doesnt exist.
-#6.Execution : ChangeGroup(L&U).sh "groupname" "directory"
+#6.Execution : ChangeGroup(L&U).sh "groupname" "path of file"
 #******************************************************************************************************************
 if test "$1" = ""
 then
